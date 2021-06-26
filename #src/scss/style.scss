@@ -1,0 +1,59 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+   @font-face {
+      font-family: $font_name;
+      font-display: swap;
+      src: url("../fonts/#{$file_name}.woff") format("woff"),
+      url("../fonts/#{$file_name}.woff2") format("woff2");
+      font-weight: #{$weight};
+      font-style: #{$style};
+   }
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+@import "fonts";
+@import "header";
+@import "footer";
+@import "aside";
+
+h1, h2 {
+   font-family: SFUIDisplayRegular;
+   margin: 20px 0px 10px 0px;
+}
+
+._container {
+   max-width: 700px;
+   margin: 0 auto;
+}
+
+.wrapper{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+.main {
+   min-height: calc(100vh - 80px - 250px);
+   display: flex;
+   max-width: 700px;
+   margin: 0 auto;
+   padding: 0px 20px 20px 0px;
+}
+.main-column {
+   max-width: 500px;
+   margin: 10px 20px 0px 0px;   
+   & > p {
+      font-family: MontserratLight;
+   }
+}
+
+.main-right{   
+   border-left: 1px solid #333
+}
+
+.img-cont {
+   max-width: 500px;
+}
+

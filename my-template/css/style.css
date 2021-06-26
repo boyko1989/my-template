@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "AoudaxCyrillic";
+  font-display: swap;
+  src: url("../fonts/AoudaxCyrillic.woff") format("woff"), url("../fonts/AoudaxCyrillic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ClearSansMedium";
+  font-display: swap;
+  src: url("../fonts/ClearSansMedium.woff") format("woff"), url("../fonts/ClearSansMedium.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SFUIDisplayRegular";
+  font-display: swap;
+  src: url("../fonts/SFUIDisplayRegular.woff") format("woff"), url("../fonts/SFUIDisplayRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratLight";
+  font-display: swap;
+  src: url("../fonts/MontserratLight.woff") format("woff"), url("../fonts/MontserratLight.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  height: 80px;
+  border-bottom: 1px #333 solid;
+}
+
+.footer {
+  padding: 10px 0px 0px 0px;
+  background-color: #333;
+  height: 250px;
+  color: #fff;
+  font-family: ClearSansMedium;
+}
+
+.rightblk {
+  width: 200px;
+  padding: 10px 0 0 20px;
+  font-family: arial;
+  font-size: 12px;
+}
+
+h1,
+h2 {
+  font-family: SFUIDisplayRegular;
+  margin: 20px 0px 10px 0px;
+}
+
+._container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main {
+  min-height: calc(100vh - 80px - 250px);
+  display: flex;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0px 20px 20px 0px;
+}
+
+.main-column {
+  max-width: 500px;
+  margin: 10px 20px 0px 0px;
+}
+
+.main-column > p {
+  font-family: MontserratLight;
+}
+
+.main-right {
+  border-left: 1px solid #333;
+}
+
+.img-cont {
+  max-width: 500px;
+}
+@supports (-webkit-appearance:none){
+
+}
