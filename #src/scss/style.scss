@@ -22,7 +22,7 @@ $fontFamily: "SFUIDisplayRegular";
 $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1170;
-$md1: $maxWidthContainer+12;
+$md1: $maxWidthContainer+16;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
@@ -78,7 +78,7 @@ body {
 
    @media (max-width: $md4+px) {
       max-width: none;
-      padding: 0 10px;
+      padding: 0 15px;
    }
 }
 
@@ -105,7 +105,8 @@ h1{
 }
 
 h2{
-   font-size: 20px;
+   font-size: 25px;
+   line-height: 30px;
 }
 .main {
    display: flex;
