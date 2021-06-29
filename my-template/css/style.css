@@ -756,8 +756,35 @@ body.ie ._ibg img {
 }
 
 .rightblk {
-  width: 200px;
   padding: 10px 0 0 20px;
+}
+
+.page__block {
+  margin: 0px 0px 20px 0px;
+}
+
+.block__one .block__body {
+  background-color: #e4fffe;
+}
+
+.block__two .block__body {
+  background-color: #ffe4e4;
+}
+
+.block__body {
+  padding: 20px;
+  border: 1px solid rgba(51, 51, 51, 0.151);
+}
+
+.block__title {
+  text-align: center;
+  color: #575757;
+  font-family: Arial;
+  font-size: 30px;
+  line-height: 110%;
+}
+
+.block__text {
   font-family: arial;
   font-size: 12px;
   line-height: 18px;
@@ -793,8 +820,7 @@ h2 {
 }
 
 .main-column {
-  max-width: 90%;
-  margin: 10px 20px 0px 0px;
+  margin: 10px 20px 10px 0px;
 }
 
 .main-column > p {
@@ -808,7 +834,7 @@ h2 {
 }
 
 .img-cont {
-  max-width: 80%;
+  max-width: 100%;
 }
 
 @media (min-width: 991.98px) {
@@ -825,6 +851,25 @@ h2 {
 
   .checkbox a:hover {
     text-decoration: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .block__body {
+    padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  .block__title {
+    font-size: calc(18px + (30 - 18) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  .main-column > p {
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+    line-height: calc(18px + (24 - 18) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  body {
+    font-size: calc(18px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
   }
 }
 
@@ -846,15 +891,15 @@ h2 {
   .select__options {
     font-size: 18px;
   }
+
+  .main {
+    flex-direction: column-reverse;
+  }
 }
 
 @media (max-width: 767.98px) {
   ._container {
-    max-width: 480px;
-  }
-
-  .main-right {
-    width: 150px;
+    max-width: 580px;
   }
 }
 
@@ -862,18 +907,6 @@ h2 {
   ._container {
     max-width: none;
     padding: 0 15px;
-  }
-
-  .rightblk {
-    width: 80vw;
-  }
-
-  .main {
-    flex-direction: column-reverse;
-  }
-
-  .main-right {
-    width: 100%;
   }
 }
 @supports (-webkit-appearance:none){
@@ -893,6 +926,14 @@ h2 {
 }
 
  @media (min-width: 992px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1200px){
 
 @supports (-webkit-appearance:none){
 
