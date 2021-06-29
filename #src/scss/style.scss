@@ -111,9 +111,7 @@ h1, h2 {
    margin: 20px 0px 10px 0px;
 }
 
-h1{
-   font-size: 40px;
-}
+
 
 h2{
    font-size: 25px;
@@ -156,6 +154,13 @@ h2{
    body{
       font-size: calc(18px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
    }
+
+   h1 {
+      font-size: calc(40px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+      line-height: calc(50px + (50 - 30) * ((100vw - 320px) / (1200 - 320)));
+      ;
+   }
+
 }
 //    .block__body {
 //       padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));

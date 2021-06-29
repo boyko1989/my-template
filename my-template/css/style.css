@@ -740,6 +740,23 @@ body.ie ._ibg img {
   background-color: #fff;
 }
 
+.menu__list {
+  display: flex;
+}
+
+.menu__list > li {
+  margin: 25px 40px 0px 0px;
+}
+
+.menu__link {
+  color: #000;
+  font-weight: 900;
+}
+
+.menu__link:hover {
+  color: #8f2323;
+}
+
 .icon-menu {
   display: none;
 }
@@ -747,7 +764,7 @@ body.ie ._ibg img {
 .footer {
   padding: 10px 0px 0px 0px;
   background-color: #333;
-  height: 250px;
+  min-height: 250px;
   color: #fff;
   font-family: ClearSansMedium;
 }
@@ -757,6 +774,7 @@ body.ie ._ibg img {
   font-family: "MontserratLight";
   letter-spacing: 0.1em;
   font-weight: 400;
+  font-size: 12px;
 }
 
 .rightblk {
@@ -808,10 +826,6 @@ h2 {
   margin: 20px 0px 10px 0px;
 }
 
-h1 {
-  font-size: 40px;
-}
-
 h2 {
   font-size: 25px;
   line-height: 30px;
@@ -859,6 +873,10 @@ h2 {
 }
 
 @media (max-width: 1200px) {
+  .footer-content > p {
+    font-size: calc(12px + (12 - 8) * ((100vw - 320px) / (1200 - 320)));
+  }
+
   .block__body {
     padding: calc(20px + (30 - 20) * ((100vw - 320px) / (1200 - 320)));
   }
@@ -874,6 +892,11 @@ h2 {
 
   body {
     font-size: calc(18px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
+  }
+
+  h1 {
+    font-size: calc(40px + (40 - 20) * ((100vw - 320px) / (1200 - 320)));
+    line-height: calc(50px + (50 - 30) * ((100vw - 320px) / (1200 - 320)));
   }
 }
 
