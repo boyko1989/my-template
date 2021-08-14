@@ -10,10 +10,9 @@
 */
 //&display=swap&subset=cyrillic-ext
 @import "fonts";
-@import url(https://fonts.googleapis.com/css?family=Overpass:100,100italic,200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap&subset=cyrillic-ext);
 // Шрифто по умолчанию
 
-$fontFamily: "MontserratLight";
+$fontFamily: "";
 
 
 /**
@@ -35,9 +34,8 @@ $md4: 479.98;
 @import "null";
 
 body {
-   color: #333;
-   font-size: 18px;
-   line-height: 30px;
+   color: #000;
+   font-size: 14px;
 
    &._lock {
       overflow: hidden;
@@ -50,7 +48,7 @@ body {
 
 .wrapper {
    width: 100%;
-   min-height: calc(100vh - 320px);
+   min-height: 100%;
    overflow: hidden;
    display: flex;
    flex-direction: column;
@@ -105,98 +103,3 @@ body {
 .page {
    flex: 1 1 auto;
 }
-
-h1, h2 {
-   font-family: $fontFamily;
-   margin: 20px 0px 10px 0px;
-}
-
-h1{
-   font-weight: 900;
-   font-size: 35px;
-   line-height: 120%;
-   margin: 50px 0px 30px 0px;
-}
-
-h2{
-   font-size: 25px;
-   font-weight: 700;
-   line-height: 30px;
-   margin: 30px 0px 15px 0px;
-}
-
-h3 {
-   font-size: 20px;
-   line-height: 30px;
-   font-weight: 700;
-   margin: 15px 0px 10px 0px;
-}
-
-.main {
-   display: flex;
-   margin: 80px auto 0 auto;
-   padding: 0px 20px 20px 0px;
-
-   @media (max-width:$md2+px){
-      flex-direction: column-reverse;
-   }
-   &-column {
-      margin: 10px 20px 10px 0px;
-
-      &>p {
-         font-family: $fontFamily;
-         line-height: 24px;
-         padding: 10px 0px 15px 0px;
-         @media (max-width:1200px) {
-            font-size: calc(12px + (18 - 12) * ((100vw - 320px) / (1200 - 320)));
-            line-height: calc(18px + (24 - 18) * ((100vw - 320px) / (1200 - 320)));
-         }
-      }
-   }
-
-   &-right {
-      border-left: 1px solid #333;
-      }
-   }
-   
-
-.img-cont {
-   max-width: calc(100% - 20px);
-   margin: 0px 0px 0px 10px;
-}
-
-@media (max-width:1200px) {
-   ._adapt {
-      font-size: calc(14px + (14 - 12) * ((100vw - 320px) / (1200 - 320)));
-      line-height: 150%;
-   }
-}
-
-.page__text p {
-   padding: 0px 0px 20px 0px;
-}
-
-
-.page__section {
-   padding: 20px;
-   margin: 10px;
-}
-
-.page__section_1 {
-   background-color: rgb(230, 228, 255);
-   
-}
-
-.page__section_2 {
-   background-color: rgb(253, 255, 228);
-}
-
-.page__section_3 {
-   background-color: rgb(255, 228, 255);
-}
-
-.page__title {}
-
-.page__text {}
-
-.page__sub-title {}
