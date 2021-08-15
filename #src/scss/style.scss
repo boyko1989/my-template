@@ -11,8 +11,15 @@
 //&display=swap&subset=cyrillic-ext
 @import "fonts";
 // Шрифто по умолчанию
-
 $fontFamily: "";
+$fontSize: 16;
+
+/**
+* Иконочные шрифты
+*/
+@import "icons";
+
+
 
 
 /**
@@ -26,6 +33,8 @@ $md1: $maxWidthContainer+16;
 $md2: 991.98;
 $md3: 767.98;
 $md4: 479.98;
+
+$mainColor: #000;
 
 /**
 * Обнуление, общие параметры
